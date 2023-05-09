@@ -37,6 +37,8 @@ public class MainMenuActivity extends AppCompatActivity {
                     menuItem.setIcon(R.drawable.ic_volunteer_active);    // 선택한 이미지 변경
                     menu.findItem(R.id.volunteer_status).setIcon(R.drawable.ic_volunteer_status_unactive);
                     menu.findItem(R.id.mypage).setIcon(R.drawable.ic_mypage_unactive);
+                    startActivity(new Intent(getApplicationContext(),VolunteerActivity.class));
+                    overridePendingTransition(0,0);
                     return true;
 
                 case R.id.volunteer_status:
