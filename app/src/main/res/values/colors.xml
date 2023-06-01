@@ -10,4 +10,14 @@
     <color name="Main_yellow">#FFCF30</color>
     <color name="Main_orange">#FF9624</color>
 
+    <color name="LightGray1">#F5F6FA</color>
+    <color name="LightGray2">#EBEBEB</color>
+    <color name="CommonGray">#CCCCCC</color>
+    <color name="DarkGray1">#939393</color>
+    <color name="DarkGray2">#252525</color>
+    <color name="Gray">#B8B8B8</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
 </resources>

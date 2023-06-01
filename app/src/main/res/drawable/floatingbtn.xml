@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!--<dimen android:name="design_fab_size_normal" tools:override="true">58dp</dimen> -->
+    <dimen android:name="design_fab_image_size" tools:override="true">58dp</dimen>
+</resources>
