@@ -10,17 +10,27 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_margin="40dp">
-    <ImageView
-        android:id="@+id/logotext"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:src="@drawable/logotext"/>
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:src="@drawable/careever_logo"/>
+        <ImageView
+            android:id="@+id/logotext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/careever_text"/>
+        <TextView
+            android:id="@+id/Text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textColor="#43413D"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:text="유기동물 이동봉사의 모든 것을 책임지다"/>
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/careever_logo"/>
     </LinearLayout>
 </LinearLayout>

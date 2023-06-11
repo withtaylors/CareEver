@@ -4,8 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".VolunteerFragment">
+    android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -19,8 +18,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="봉사하기"
+                android:text="봉사하기 게시판"
                 android:textAlignment="center"
+                android:textColor="@color/black"
                 android:textSize="23sp"
                 android:textStyle="bold"/>
         </LinearLayout>
@@ -29,6 +29,7 @@
             android:layout_height="match_parent"
             app:cardCornerRadius="30dp"
             app:cardElevation="15dp"
+            android:layout_marginBottom="30dp"
             android:background="@drawable/custom_box">
             <LinearLayout
                 android:layout_width="match_parent"
@@ -38,26 +39,42 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textAlignment="center"
-                    android:text=" "
-                    android:textSize="18sp" />
+                    android:background="@drawable/view_write"
+                    android:hint="지역을 자유롭게 검색해 보세요"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:padding="10dp"/>
+                <LinearLayout
+                    android:id="@+id/list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="15dp">
+                    <ListView
+                        android:id="@+id/listview1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@null"
+                        android:dividerHeight="20dp"/>
+                </LinearLayout>
             </LinearLayout>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:clickable="true"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="50dp"
+                android:src="@drawable/baseline_create_24" />
         </androidx.cardview.widget.CardView>
     </LinearLayout>
+
     <FrameLayout
         android:id="@+id/menu_frame_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="?attr/actionBarSize"/>
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/menu_bottom_navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="7dp"
-        android:layout_gravity="bottom"
-        app:itemIconTint="@drawable/menu_item_color"
-        app:itemTextColor="@drawable/menu_item_color"
-        app:labelVisibilityMode="labeled"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:menu="@menu/bottom_menu"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
